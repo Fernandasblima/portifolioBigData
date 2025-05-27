@@ -49,7 +49,7 @@ st.sidebar.title("🔧 Seções")
 section = st.sidebar.radio("Escolha uma seção:", [
     "Clientes", "Produtos", "Pedidos", "Análise de Dados"])
 
-# --------------------------- CLIENTES ---------------------------
+  
 if section == "Clientes":
     st.header("Clientes")
     num = st.number_input("Nº de clientes falsos:", 1, 1000, 5)
@@ -86,7 +86,6 @@ if section == "Clientes":
         except:
             st.error("Erro ao atualizar cliente.")
 
-# --------------------------- PRODUTOS ---------------------------
 elif section == "Produtos":
     st.header("Produtos")
     num = st.number_input("Nº de produtos falsos:", 1, 1000, 5)
@@ -124,7 +123,6 @@ elif section == "Produtos":
         except:
             st.error("Erro ao atualizar produto.")
 
-# --------------------------- PEDIDOS ---------------------------
 elif section == "Pedidos":
     st.header("Pedidos")
     num = st.number_input("Nº de pedidos falsos:", 1, 1000, 5)
